@@ -5,6 +5,15 @@ import '../src/index.css';
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lageq.com.br';
 
+const ogImage = {
+  url: '/og-image.jpg',
+  secureUrl: '/og-image.jpg',
+  width: 1200,
+  height: 630,
+  alt: 'LAGEQ - Laboratório de Geoquímica e Qualidade Ambiental',
+  type: 'image/jpeg',
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -34,21 +43,14 @@ export const metadata: Metadata = {
     title: 'LAGEQ - Laboratório de Geoquímica e Qualidade Ambiental',
     description:
       'Soluções ambientais com rigor científico, análises laboratoriais e suporte técnico para monitoramento, licenciamento e tomada de decisão.',
-    images: [
-      {
-        url: '/landScape.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Paisagem representando atuação ambiental e científica do LAGEQ',
-      },
-    ],
+    images: [ogImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'LAGEQ - Laboratório de Geoquímica e Qualidade Ambiental',
     description:
       'Soluções ambientais com rigor científico, análises laboratoriais e suporte técnico para monitoramento, licenciamento e tomada de decisão.',
-    images: ['/landScape.jpg'],
+    images: [ogImage.url],
   },
   robots: {
     index: true,
