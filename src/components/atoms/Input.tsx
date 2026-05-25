@@ -1,4 +1,12 @@
-export function Input({ label, error, className = '', ...props }) {
+import type { InputHTMLAttributes } from 'react';
+
+type InputProps = InputHTMLAttributes<HTMLInputElement> & {
+  label?: string;
+  error?: string;
+  className?: string;
+};
+
+export function Input({ label, error, className = '', ...props }: InputProps) {
   return (
     <div className={className}>
       {label && (

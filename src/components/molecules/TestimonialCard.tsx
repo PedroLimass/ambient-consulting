@@ -1,4 +1,18 @@
-export function TestimonialCard({ quote, author, role, logoSrc, logoAlt }) {
+type TestimonialCardProps = {
+  quote: string;
+  author: string;
+  role: string;
+  logoSrc?: string;
+  logoAlt?: string;
+};
+
+export function TestimonialCard({
+  quote,
+  author,
+  role,
+  logoSrc,
+  logoAlt,
+}: TestimonialCardProps) {
   return (
     <div className="p-6 rounded-2xl bg-white border border-gray-200/80 shadow-sm h-full">
       <p className="text-gray-700 leading-relaxed mb-5">&ldquo;{quote}&rdquo;</p>

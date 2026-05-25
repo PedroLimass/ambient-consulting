@@ -1,6 +1,19 @@
-import { Heading } from "../atoms";
+import type { ReactNode } from 'react';
+import { Heading } from '../atoms';
 
-export function ServiceCard({ icon, title, description, href = "#" }) {
+type ServiceCardProps = {
+  icon: ReactNode;
+  title: string;
+  description: string;
+  href?: string;
+};
+
+export function ServiceCard({
+  icon,
+  title,
+  description,
+  href = '#',
+}: ServiceCardProps) {
   return (
     <a
       href={href}

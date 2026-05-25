@@ -1,9 +1,11 @@
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import '../src/index.css';
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lageq.com.br';
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: 'LAGEQ - Laboratório de Geoquímica e Qualidade Ambiental',
@@ -61,7 +63,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
       <body>{children}</body>

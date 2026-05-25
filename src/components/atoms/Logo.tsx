@@ -1,11 +1,18 @@
-export function Logo({ className = "", compact = false, light = false }) {
+type LogoProps = {
+  className?: string;
+  compact?: boolean;
+  light?: boolean;
+};
+
+export function Logo({ className = '', compact = false, light = false }: LogoProps) {
   const textClass = light
-    ? "font-display font-bold text-2xl sm:text-3xl text-white"
-    : "font-display font-bold text-2xl sm:text-3xl text-[var(--color-primary-dark)]";
+    ? 'font-display font-bold text-2xl sm:text-3xl text-white'
+    : 'font-display font-bold text-2xl sm:text-3xl text-[var(--color-primary-dark)]';
   const accentClass = light
-    ? "text-[var(--color-sand)]"
-    : "text-[var(--color-accent)]";
-  const subtitleClass = `font-normal text-sm leading-tight ${light ? "text-white/80" : "text-gray-600"}`;
+    ? 'text-[var(--color-sand)]'
+    : 'text-[var(--color-accent)]';
+  const subtitleClass = `font-normal text-sm leading-tight ${light ? 'text-white/80' : 'text-gray-600'}`;
+
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[var(--color-primary)] flex items-center justify-center shadow-lg flex-shrink-0">
