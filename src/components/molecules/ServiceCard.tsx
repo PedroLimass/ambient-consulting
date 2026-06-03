@@ -12,7 +12,7 @@ export function ServiceCard({
   icon,
   title,
   description,
-  href = '#',
+  href = '#contato',
 }: ServiceCardProps) {
   return (
     <a

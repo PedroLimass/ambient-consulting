@@ -23,7 +23,7 @@ export function About() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              { value: '+45', label: 'Anos de atuação' },
+              { value: '+15', label: 'Anos de atuação' },
               { value: '+300', label: 'Projetos minerários' },
               { value: '+200', label: 'Projetos ambientais' },
               { value: '100%', label: 'Laudos em conformidade' },

@@ -36,7 +36,7 @@ const services = [
   { title: 'Análise de Água', description: 'Potabilidade, irrigação, efluentes. Atendemos poços, cisternas, indústrias e conforme portarias vigentes.', icon: <IconFlask /> },
   { title: 'Licenciamento Ambiental', description: 'Da prospecção à operação. Estudos de viabilidade, EIA/RIMA, gestão de processos junto a órgãos ambientais.', icon: <IconShield /> },
   { title: 'Consultoria em Mineração', description: 'Prospecção, pesquisa, avaliação e exploração. Gestão de processos na ANM e coordenação de projetos minerários.', icon: <IconGlobe /> },
-  { title: 'Bromatológica e Rações', description: 'Análise sedimentológica de solo, sedimento e material particulado por granulometria a laser', icon: <IconBeaker /> },
+  { title: 'Geoquímica de Sedimentos', description: 'Caracterização físico-química e geoquímica de solos, sedimentos e materiais particulados, com análises granulométricas a laser para estudos ambientais e de engenharia.', icon: <IconBeaker /> },
   { title: 'Programas Ambientais', description: 'Monitoramento, recuperação de áreas, educação ambiental. Soluções para implantação e operação de projetos.', icon: <IconMap /> },
 ];
 
