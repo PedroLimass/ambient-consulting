@@ -25,9 +25,11 @@ export function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-white/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <p className="text-white/60 text-sm">© {new Date().getFullYear()} LAGEQ - Laboratório de Geoquímica. Todos os direitos reservados.</p>
+          {/* WhatsApp temporariamente desabilitado — reativar no futuro
           <a href="https://wa.me/5561995842992" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-white/80 hover:text-white text-sm">
             Fale pelo WhatsApp
           </a>
+          */}
         </div>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Logo, Button } from '../atoms';
+import { Logo } from '../atoms';
 import { NavLink } from '../molecules';
 
 const navItems = [
@@ -27,11 +27,13 @@ export function Header() {
               <NavLink key={item.href} href={item.href}>{item.label}</NavLink>
             ))}
           </nav>
+          {/* WhatsApp temporariamente desabilitado — reativar no futuro
           <div className="hidden md:flex items-center gap-3">
             <a href="https://wa.me/5561995842992" target="_blank" rel="noreferrer">
               <Button variant="primary" size="sm">WhatsApp</Button>
             </a>
           </div>
+          */}
           <button
             type="button"
             className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100"
@@ -49,9 +51,11 @@ export function Header() {
               {navItems.map((item) => (
                 <a key={item.href} href={item.href} className="px-3 py-2 rounded-lg text-gray-700 hover:bg-[var(--color-primary)]/5" onClick={() => setOpen(false)}>{item.label}</a>
               ))}
+              {/* WhatsApp temporariamente desabilitado — reativar no futuro
               <a href="https://wa.me/5561995842992" target="_blank" rel="noreferrer" className="mt-2" onClick={() => setOpen(false)}>
                 <Button variant="primary" size="md" className="w-full">WhatsApp</Button>
               </a>
+              */}
             </nav>
           </div>
         )}
