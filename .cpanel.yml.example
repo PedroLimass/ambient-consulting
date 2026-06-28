@@ -1,0 +1,15 @@
+---
+# Copie para .cpanel.yml e troque SEU_USUARIO pelo usuário do cPanel (ex.: lageq).
+# No cPanel: Git Version Control → Manage → Pull or Deploy → Deploy HEAD Commit
+#
+# Caminho do repositório no servidor (ajuste se criou em outro lugar):
+#   /home/SEU_USUARIO/repositories/ambient-consulting
+
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/SEU_USUARIO/public_html/
+    - export NEXT_PUBLIC_SITE_URL=https://www.lageq.com.br
+    - export NODE_ENV=production
+    - /bin/npm ci
+    - /bin/npm run build
+    - /bin/cp -R out/* $DEPLOYPATH
